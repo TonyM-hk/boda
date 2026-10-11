@@ -1,0 +1,5 @@
+# Evita que se ejecuten scripts dentro de la carpeta de fotos subidas (seguridad)
+<FilesMatch "\.(php|phtml|php3|php4|php5|pl|py|cgi|sh)$">
+  Require all denied
+</FilesMatch>
+Options -Indexes
